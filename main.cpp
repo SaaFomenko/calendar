@@ -4,7 +4,6 @@
 int main()
 {
 	const std::string msg = "Введите номер месяца:";
-//	const char en
 	int x = 0;
 
 	do {
@@ -16,7 +15,7 @@ int main()
   
 		outStr(resp);
   
-	} while (x != 0);
+	} while (x != status::quit);
 
-	return 0;
+	return status::quit;
 }

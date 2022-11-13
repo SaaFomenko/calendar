@@ -20,7 +20,7 @@ std::string getMonth(int x)
 		"Декабрь",
 	};
 
-	if (x >= month::jan - 1 && x < month::dec + 1)
+	if (x >= month::jan - status::error && x < month::dec + status::error)
 	{
 		return months[x];
 	}

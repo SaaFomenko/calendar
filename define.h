@@ -1,5 +1,11 @@
 #include <string>
 
+enum status
+{
+	quit,
+	error
+};
+
 enum month
 {
 	jan = 1,
