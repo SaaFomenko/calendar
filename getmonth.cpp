@@ -3,7 +3,7 @@
 
 std::string getMonth(int x)
 {
-	const std::string err_msg = "Неправильный номер!";
+	const std::string err_num = "Неправильный номер!";
 	const std::string months[] = {
 		"Ввод завершен.",
 		"Январь",
@@ -20,10 +20,10 @@ std::string getMonth(int x)
 		"Декабрь",
 	};
 
-	if (x >= month::jan - status::error && x < month::dec + status::error)
+	if (x >= month::jan - status::error && x <= month::dec)
 	{
 		return months[x];
 	}
 	
-	return err_msg;
+	return err_num;
 }
