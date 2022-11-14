@@ -1,6 +1,6 @@
 # calendar
 
-- getmonth.cpp - source with function for get month in cyrillic characters.
+- getmonth.cpp - source with function for get month in cyrillic characters by number from 1 to 12.
 - outstr.cpp - source with function for output string to out stream, have second default argument with char end row.
 - define.h - file with define sources application.
 
