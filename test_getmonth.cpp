@@ -1,8 +1,9 @@
-#include <string>
+#include <iostream>
 #include "define.h"
 
-std::string getMonth(int x)
+int main()
 {
+	int x = 233;
 	const std::string err_num = "Неправильный номер!";
 	const std::string months[] = {
 		"Ввод завершен.",
@@ -20,14 +21,19 @@ std::string getMonth(int x)
 		"Декабрь",
 	};
 
-/*	bool check = x < static_cast<int>(status::quit) ||
-		static_cast<int>(month::dec) > x; */
+	bool check = x < static_cast<int>(status::quit) ||
+		static_cast<int>(month::dec) < x;
 
-	if (x < status::quit || month::dec < x)
-//	if (check)
+//	if (x < status::quit || month::dec > x)
+	if (check)
 	{
-		return err_num;
+		std::cout << err_num << std::endl;
+
+		return x;
 	}
 	
-	return months[x];
+	std::cout << x << std::endl;
+//	return months[x];
+
+	return 0;
 }

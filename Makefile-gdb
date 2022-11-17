@@ -1,0 +1,3 @@
+all:
+	gcc -ggdb test_getmonth.cpp -lstdc++ -o test.out
+
